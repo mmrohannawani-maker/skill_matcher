@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 215 80% 28%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 18% 94%;
+    --secondary-foreground: 220 25% 10%;
+
+    --muted: 210 18% 96%;
+    --muted-foreground: 215 14% 46%;
+
+    --accent: 174 62% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 215 80% 28%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 215 80% 28%;
+    --chart-2: 174 62% 38%;
+    --chart-3: 262 52% 47%;
+    --chart-4: 36 90% 50%;
+    --chart-5: 0 72% 51%;
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 210 20% 78%;
+    --sidebar-primary: 174 62% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 16%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 18% 18%;
+    --sidebar-ring: 174 62% 50%;
+
+    --success: 142 72% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 36 90% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 200 80% 50%;
+    --info-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  .stat-card {
+    @apply bg-card rounded-lg border p-5 shadow-sm transition-shadow hover:shadow-md;
+  }
+  .page-header {
+    @apply mb-6;
+  }
+  .page-title {
+    @apply text-2xl font-bold text-foreground;
+  }
+  .page-subtitle {
+    @apply text-sm text-muted-foreground mt-1;
+  }
+}

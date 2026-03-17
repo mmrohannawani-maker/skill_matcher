@@ -1,0 +1,24 @@
+# Python dependencies for the backend project
+
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
+python-dotenv
+email-validator
+
+pandas
+openpyxl
+numpy
+scikit-learn
+spacy
+sentence-transformers
+
+langchain
+langchain-huggingface
+huggingface_hub
+
+mangum==0.17.0
