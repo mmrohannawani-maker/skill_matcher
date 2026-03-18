@@ -78,7 +78,7 @@ pids
 
 # Vercel specific
 .vercel
-vercel.json
+# vercel.json
 .vercel.json
 !.vercel/project.json
 .vc-config.json
