@@ -1,5 +1,6 @@
 # Core FastAPI - Upgraded
 fastapi==0.115.12        # Latest stable (Dec 2025) [citation:1]
+typing-extensions==4.14.1
 uvicorn[standard]==0.34.0 # Upgraded from 0.24.0 [citation:2]
 sqlalchemy==2.0.39       # Latest 2.0.x [citation:3]
 pydantic==2.13.0b2       # Latest beta with Python 3.9 support [citation:4]
